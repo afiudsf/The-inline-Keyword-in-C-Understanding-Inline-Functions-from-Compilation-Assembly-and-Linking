@@ -1,6 +1,6 @@
 # The-inline-Keyword-in-C-Understanding-Inline-Functions-from-Compilation-Assembly-and-Linking
 
-[CSDN链接](https://blog.csdn.net/2401_85294182/article/details/166131934?fromshare=blogdetail&sharetype=blogdetail&sharerId=166131934&sharerefer=PC&sharesource=2401_85294182&sharefrom=from_link)
+CSDN链接：[CSDN链接](https://blog.csdn.net/2401_85294182/article/details/166131934?fromshare=blogdetail&sharetype=blogdetail&sharerId=166131934&sharerefer=PC&sharesource=2401_85294182&sharefrom=from_link)
 
 开始学习 C 语言时，我曾把 `inline` 关键字理解得十分直接：在函数前面加上 `inline` 关键字后，编译器就会把函数代码复制到调用位置，省掉函数调用，程序自然会更快。然而在真正学习编译和链接之后，才会发现事情没有想的这么简单：有时加了 `inline`，程序仍然生成了函数调用；有时代码可以编译，却在链接阶段报出 `undefined reference`；把编译选项从 `-O0` 改成 `-O2`，结果又变了。
 
